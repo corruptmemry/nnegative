@@ -11,8 +11,35 @@ export default function Hero() {
             Pay2Win. Твоя свобода заканчивается там, где начинается свобода
             другого игрока.
           </div>
+          <div className="div-4">
+            <div className="div-5">play.neutronproject.art</div>
+           </div>
         </div>
         <style>{`
+          .div-4 {
+            max-width: 303px;
+            height: 64px;
+            width: 303px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 40px;
+            border-color: rgba(0, 0, 0, 1);
+            border-width: 2px;
+            border-style: solid;
+          }
+           .div-5 {
+            max-width: 303px;
+            height: 64px;
+            width: 303px;
+            color: rgba(0, 0, 0, 1);
+            font-size: 18px;
+            letter-spacing: 0%;
+            padding: 6% 0;
+            text-align: center;
+            font-family: JetBrains Mono, sans-serif;
+           }
           .hero-div {
             display: flex;
             flex-direction: column;

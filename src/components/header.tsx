@@ -1,15 +1,15 @@
 export default function Header() {
     return (
         <>
-          <div className="header">
-            <div className="header-div-2">
-              <div className="header-div-3">
+          <div className="div">
+            <div className="div-2">
+              <div className="div-3">
                 <picture>
                   <source
                     type="image/webp"
                   />
                   <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Faa569dde15724517923827ef5ba7dbdd"
+                    src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Fdcdbad0df0c547fea6b7ca894ff3c0ff"
                     className="image"
                   />
                 </picture>
@@ -18,13 +18,13 @@ export default function Header() {
             </div>
           </div>
           <style>{`
-            .header {
+            .div {
               display: flex;
               flex-direction: row;
               max-width: 1728px;
               justify-content: flex-start;
             }
-            .header-div-2 {
+            .div-2 {
               display: flex;
               flex-direction: column;
               max-width: 248.02906799316406px;
@@ -35,7 +35,7 @@ export default function Header() {
               padding-right: 10px;
               padding-left: 10px;
             }
-            .header-div-3 {
+            .div-3 {
               display: flex;
               position: relative;
               min-width: 20px;
@@ -58,37 +58,18 @@ export default function Header() {
               pointer-events: none;
               font-size: 0;
             }
-            .header-div-4 {
+            .div-6 {
               display: flex;
-              flex-direction: column;
-              max-width: 111.92251586914062px;
-              justify-content: flex-start;
-              align-items: flex-start;
-              margin-left: 1362px;
-            }
-            .header-div-5 {
-              display: flex;
-              max-width: 111.92251586914062px;
-              height: 63.50819778442383px;
-              width: 111.92251586914062px;
+              max-width: 303px;
+              height: 64px;
+              width: 303px;
               border-color: rgba(0, 0, 0, 1);
               border-width: 2px;
               border-style: solid;
             }
-            .header-div-6 {
-              border: 2px solid black;
-              background-color: white;
-              max-width: 111.92251586914062px;
-              color: black;
-              margin-left: 100%;
-              padding: 14px 28px;
-              font-size: 16px;
-              cursor: pointer;
-              margin-top: 50px;
-              font-family: JetBrains Mono, sans-serif;
-            }
           `}</style>
         </>
       );
+    
     
   }
