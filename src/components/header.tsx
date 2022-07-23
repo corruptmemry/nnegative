@@ -1,75 +1,40 @@
-export default function Header() {
-    return (
-        <>
-          <div className="div">
-            <div className="div-2">
-              <div className="div-3">
-                <picture>
-                  <source
-                    type="image/webp"
-                  />
-                  <img
-                    src="https://cdn.builder.io/api/v1/image/assets%2FTEMP%2Fdcdbad0df0c547fea6b7ca894ff3c0ff"
-                    className="image"
-                  />
-                </picture>
-                <div className="builder-image-sizer image-sizer" />
-              </div>
+import { useEffect } from 'react';
+import Logo from '../logo.svg'
+import jwt_decode from "jwt-decode";
+
+interface JwtPayload {
+    id: string,
+    username: string
+}
+
+export default function Header_2() {
+
+return (
+  <>
+        <header>
+        <nav className="bg-white border-gray-200 px-4 lg:px-6 py-6">
+            <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <a href="/" className="flex items-center">
+                    <img src={Logo} className="mr-3 h-10 sm:h-16"/>
+                </a>
+                <div className="flex items-center lg:order-2">
+                    <a href="https://ai.laem.fun/api/redirect" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800">Перейти к нейросети</a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span className="sr-only"></span>
+                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="/" className="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white" aria-current="page">Главная</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-          <style>{`
-            .div {
-              display: flex;
-              flex-direction: row;
-              max-width: 1728px;
-              justify-content: flex-start;
-            }
-            .div-2 {
-              display: flex;
-              flex-direction: column;
-              max-width: 248.02906799316406px;
-              justify-content: flex-start;
-              align-items: flex-start;
-              padding-top: 10px;
-              padding-bottom: 10px;
-              padding-right: 10px;
-              padding-left: 10px;
-            }
-            .div-3 {
-              display: flex;
-              position: relative;
-              min-width: 20px;
-              min-height: 20px;
-              max-width: 228.02906799316406px;
-              width: 228.02906799316406px;
-            }
-            .image {
-              object-fit: cover;
-              object-position: center;
-              position: absolute;
-              height: 100%;
-              width: 100%;
-              top: 0;
-              left: 0;
-            }
-            .image-sizer {
-              width: 100%;
-              padding-top: 65.34254659343114%;
-              pointer-events: none;
-              font-size: 0;
-            }
-            .div-6 {
-              display: flex;
-              max-width: 303px;
-              height: 64px;
-              width: 303px;
-              border-color: rgba(0, 0, 0, 1);
-              border-width: 2px;
-              border-style: solid;
-            }
-          `}</style>
-        </>
-      );
-    
-    
+        </nav>
+    </header>
+  </>
+);
   }
