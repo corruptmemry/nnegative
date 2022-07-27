@@ -17,11 +17,11 @@ export default function Marketplace() {
                   <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                     Тотем бессмертия
                   </h5>
+                  <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+                    10 в наличии
+                  </span>
                 </a>
                 <div className="flex justify-between items-center">
-                  <p className="bg-blue-100 text-blue-800 text-xs font-semibold rounded dark:bg-blue-200 dark:text-blue-800">
-                    10 в наличии
-                  </p>
                   <span className="text-3xl font-bold text-gray-900 dark:text-white">
                     1 АР
                   </span>
