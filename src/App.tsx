@@ -3,6 +3,7 @@ import './App.css';
 import Header_2 from './components/header'
 import Footer from './components/footer';
 import Homepage from './pages/homepage';
+import Marketplace from './pages/marketplace';
 import {
   BrowserRouter,
   Switch,
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/info/policy">
           <Policy />
+        </Route>
+        <Route path="/marketplace">
+          <Marketplace />
         </Route>
       </Switch>
     </BrowserRouter>
