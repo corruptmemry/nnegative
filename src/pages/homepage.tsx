@@ -40,7 +40,7 @@ export default function Homepage() {
             </h2>
             <p className="text-gray-500 font-mono sm:text-xl">
               <strong>crptmemory</strong> - разработчик<br/>
-              <strong>Kapac6_</strong> - не знаю
+              <strong>Kapac6_</strong> - хуй с горы
             </p>
           </div>
         </div>
