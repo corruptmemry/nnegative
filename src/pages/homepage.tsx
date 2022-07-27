@@ -1,5 +1,3 @@
-import Logo from "../logo.svg";
-
 export default function Homepage() {
   return (
     <>
@@ -10,13 +8,13 @@ export default function Homepage() {
               Добро пожаловать!
             </h1>
             <p className="max-w-2xl mb-6 font-light font-mono text-gray-500 text-left lg:mb-8 md:text-lg lg:text-xl">
-              ALF - нейросеть, способная общаться.
+              nnegative - Площадка для игроков СПм, где они могут<br/>размещать на продажу вещи за АРы
             </p>
             <a
-              href="https://ai.laem.fun/api/redirect"
+              href="https://ai.laem.fun/api/auth"
               className="inline-flex justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 left-button"
             >
-              Перейти к нейросети
+              Перейти к товарам
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -38,11 +36,11 @@ export default function Homepage() {
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl font-mono font-extrabold text-gray-900">
-              Что это такое?
+              Наша команда
             </h2>
             <p className="text-gray-500 font-mono sm:text-xl">
-              ALF - нейросеть способная вести диалог.
-              Модель - RuDialogGPT3.
+              <strong>crptmemory</strong> - разработчик<br/>
+              <strong>Kapac6_</strong> - не знаю
             </p>
           </div>
         </div>

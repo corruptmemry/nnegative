@@ -1,4 +1,3 @@
-import Logo from "../logo.svg";
 
 export default function Footer() {
   return (
@@ -8,7 +7,7 @@ export default function Footer() {
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <a href="/" className="flex items-center">
-                <img src={Logo} className="mr-6 h-24" alt="Logo" />
+                <img src="/d" className="mr-6 h-24" alt="Logo" />
               </a>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -26,12 +25,7 @@ export default function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="mailto:crptmemory@gmail.com"
-                      className="hover:underline"
-                    >
-                      Почта
-                    </a>
+                      Discord (crptmemory#3878, карась#9083)
                   </li>
                 </ul>
               </div>
@@ -54,7 +48,7 @@ export default function Footer() {
             <span className="text-sm text-gray-500 sm:text-center">
               © 2022{" "}
               <a href="#" className="hover:underline">
-                ALF AI
+                nnegative
               </a>{" "}
               * All Rights Reserved.
             </span>

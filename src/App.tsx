@@ -3,7 +3,6 @@ import './App.css';
 import Header_2 from './components/header'
 import Footer from './components/footer';
 import Homepage from './pages/homepage';
-import NotFound from './pages/404'
 import {
   BrowserRouter,
   Switch,
@@ -13,7 +12,7 @@ import {
 } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Policy from './pages/policy'
+import Policy from './components/policy'
 function App() {
   return (
     <div className="flex flex-col h-screen">
@@ -25,9 +24,6 @@ function App() {
         </Route>
         <Route path="/info/policy">
           <Policy />
-        </Route>
-        <Route path="*">
-          <NotFound/>
         </Route>
       </Switch>
     </BrowserRouter>

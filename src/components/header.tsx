@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Logo from '../logo.svg'
 import jwt_decode from "jwt-decode";
 
 interface JwtPayload {
@@ -15,10 +14,10 @@ return (
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-6">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="/" className="flex items-center">
-                    <img src={Logo} className="mr-3 h-10 sm:h-16"/>
+                    <img src="/d" className="mr-3 h-10 sm:h-16" alt="здесь будет лого"/>
                 </a>
                 <div className="flex items-center lg:order-2">
-                    <a href="https://ai.laem.fun/api/redirect" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none dark:focus:ring-blue-800">Перейти к нейросети</a>
+                    <img className="w-12 h-12 rounded" src="https://crafatar.com/avatars/505da899-5f1e-4477-82d8-602ae2880df9?overlay" alt="Аватар"/>
                     <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span className="sr-only"></span>
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -32,6 +31,7 @@ return (
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </nav>
     </header>
