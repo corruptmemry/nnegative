@@ -14,6 +14,8 @@ import {
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Policy from './components/policy'
+import AuthFail from './pages/authfail'
+
 function App() {
   return (
     <div className="flex flex-col h-screen">
@@ -28,6 +30,9 @@ function App() {
         </Route>
         <Route path="/marketplace">
           <Marketplace />
+        </Route>
+        <Route path="/fail">
+          <AuthFail />
         </Route>
       </Switch>
     </BrowserRouter>
